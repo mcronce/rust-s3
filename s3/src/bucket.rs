@@ -1815,7 +1815,7 @@ impl Bucket {
     pub fn url(&self) -> String {
         if self.path_style {
             format!(
-                "{}://{}/{}",
+                "{}://{}{}",
                 self.scheme(),
                 self.path_style_host(),
                 self.name()
